@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.csq.com.pidcontroller.ChooseActivity">
+
+    <ImageView
+        android:background="@drawable/choose_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_t1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="140dp"
+        android:paddingLeft="25dp"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/btn_t1"
+            android:background="@drawable/t1"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <Button
+            android:id="@+id/btn_t2"
+            android:background="@drawable/t2"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <Button
+            android:id="@+id/btn_t3"
+            android:background="@drawable/t3"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <Button
+            android:id="@+id/btn_t4"
+            android:background="@drawable/t4"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_t2"
+        android:layout_below="@+id/ll_t1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="25dp"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/btn_t5"
+            android:background="@drawable/t5"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <Button
+            android:id="@+id/btn_t6"
+            android:background="@drawable/t6"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <Button
+            android:id="@+id/btn_t7"
+            android:background="@drawable/t7"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <Button
+            android:id="@+id/btn_t8"
+            android:background="@drawable/t8"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+    </LinearLayout>
+</RelativeLayout>

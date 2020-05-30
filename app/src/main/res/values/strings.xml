@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PidController</string>
+    <string name="reScan">重新扫描</string>
+</resources>

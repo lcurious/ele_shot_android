@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.csq.com.pidcontroller.ControlActivity">
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_reconnect"
+        android:background="@drawable/reconnect"
+        android:layout_width="33dp"
+        android:layout_height="33dp" />
+    <ImageView
+        android:id="@+id/img_choose_bg"
+        android:background="@drawable/choose1bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_btn1"
+        android:layout_marginTop="130dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:layout_height="100dp">
+        <Button
+            android:id="@+id/btn_play"
+            android:background="@drawable/btn_play"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <Button
+            android:id="@+id/btn_end"
+            android:background="@drawable/btn_end"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <Button
+            android:id="@+id/btn_pid"
+            android:background="@drawable/btn_pid"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <Button
+            android:id="@+id/btn_send"
+            android:background="@drawable/send"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+    <!--PID参数-->
+    <LinearLayout
+        android:id="@+id/ll_pid"
+        android:layout_below="@+id/ll_btn1"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_c"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="70dp">-->
+            <!--<ImageView-->
+                <!--android:background="@drawable/control_icon"-->
+                <!--android:id="@+id/img_c"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_c_plus"-->
+                <!--android:background="@drawable/plus"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/edit_c"-->
+                <!--android:background="@drawable/num_bg"-->
+                <!--android:text="0"-->
+                <!--android:textSize="30sp"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="#000"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="60dp" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_c_minus"-->
+                <!--android:background="@drawable/minus"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp" />-->
+        <!--</LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/ll_p"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+            <ImageView
+                android:background="@drawable/distance"
+                android:id="@+id/img_p"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/btn_p_plus"
+                android:background="@drawable/plus"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <EditText
+                android:id="@+id/edit_p"
+                android:background="@drawable/num_bg"
+                android:text="0"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <Button
+                android:id="@+id/btn_p_minus"
+                android:background="@drawable/minus"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_i"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+            <ImageView
+                android:background="@drawable/jiaodu"
+                android:id="@+id/img_i"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/btn_i_plus"
+                android:background="@drawable/plus"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <EditText
+                android:id="@+id/edit_i"
+                android:background="@drawable/num_bg"
+                android:text="0"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <Button
+                android:id="@+id/btn_i_minus"
+                android:background="@drawable/minus"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_d"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+            <ImageView
+                android:background="@drawable/fuyang"
+                android:id="@+id/img_d"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/btn_d_plus"
+                android:background="@drawable/plus"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <EditText
+                android:id="@+id/edit_d"
+                android:background="@drawable/num_bg"
+                android:text="0"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <Button
+                android:id="@+id/btn_d_minus"
+                android:background="@drawable/minus"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+        <!--更新数据-->
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_below="@id/ll_pid"
+            android:visibility="gone"
+            android:background="@drawable/upload"
+            android:layout_gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
